@@ -14,8 +14,8 @@ class Inventory:
                return i
         return None
     def by_value(self):
-        by_value= sorted(self.__products,key=lambda p: p.price, reverse=True)
-        return str(by_value)
+        by_value= sorted(self.__products,key=lambda p: p.total_value, reverse=True)
+        return by_value
 
     @property
     def total_value(self):
@@ -28,5 +28,5 @@ class Inventory:
 
 
         return total_value
-    o=0
+    # o=0
 
